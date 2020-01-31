@@ -1,0 +1,21 @@
+A.
+I Tested my code by first testing the cases that weere given to me and added a couple of entries into the CSV in order to test both
+port ranges and Ip address Ranges. I also Tested the Time that the program takes to run by creating a large set of Data so that i could gauge how well
+the algorithm handles large datasets. With almost 50k entries in the csv file I didnt even notice that there was that much data being read into the program.
+
+B.
+I decided that the easiest way to implement the range for the IP adresses was to split the string at every '.' character so that i could check if each of the
+number groups was in the range specified since each IP adress must have 4 groups of numbers. I initially thought about using the python range() function to make
+a sublist of the range but realized that that solution would take significantly more space that just comparing each of the sublists one by one.
+
+C.
+If i had more time, I would have sorted the inputs based on inbound and outbound and tcp and udp so that if im sure that the first parameter is not inbound or
+outbound, then i would be able to start looking for the correct packet or packet range from there. For example if there is only one inbound and the rest of the
+inputs are outbound, then i would have to look through the whole loop until I find the packet that starts with inbound. This would greatly improve the amount of
+time that it takes in order to find the input that I am looking for.
+
+
+My Ranking of Teams that I am interested In is
+1. Platform
+2. Data
+3. Policy
